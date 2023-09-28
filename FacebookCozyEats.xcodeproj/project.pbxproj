@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1DE7A58C2AC4955C00834A24 /* FacebookCozyEatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7A58B2AC4955C00834A24 /* FacebookCozyEatsApp.swift */; };
-		1DE7A58E2AC4955C00834A24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7A58D2AC4955C00834A24 /* ContentView.swift */; };
 		1DE7A5902AC4955E00834A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7A58F2AC4955E00834A24 /* Assets.xcassets */; };
 		1DE7A5932AC4955E00834A24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE7A5922AC4955E00834A24 /* Preview Assets.xcassets */; };
+		1DE7A59B2AC4958F00834A24 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7A59A2AC4958F00834A24 /* HomeView.swift */; };
+		1DE7A5A52AC4D01C00834A24 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7A5A42AC4D01C00834A24 /* Profile.swift */; };
+		1DE7A5A92AC4D31200834A24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7A5A82AC4D31200834A24 /* LoginView.swift */; };
+		1DE7A5AB2AC4F50D00834A24 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7A5AA2AC4F50D00834A24 /* FoodDetailView.swift */; };
+		1DE7A5C92AC5296900834A24 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7A5C82AC5296900834A24 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DE7A5882AC4955C00834A24 /* FacebookCozyEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookCozyEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE7A58B2AC4955C00834A24 /* FacebookCozyEatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookCozyEatsApp.swift; sourceTree = "<group>"; };
-		1DE7A58D2AC4955C00834A24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DE7A58F2AC4955E00834A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE7A5922AC4955E00834A24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DE7A59A2AC4958F00834A24 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1DE7A5A42AC4D01C00834A24 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1DE7A5A82AC4D31200834A24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1DE7A5AA2AC4F50D00834A24 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		1DE7A5C82AC5296900834A24 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		1DE7A58A2AC4955C00834A24 /* FacebookCozyEats */ = {
 			isa = PBXGroup;
 			children = (
+				1DE7A59D2AC49C1200834A24 /* ViewModels */,
+				1DE7A59C2AC49C0B00834A24 /* Models */,
+				1DE7A5992AC4956800834A24 /* Views */,
 				1DE7A58B2AC4955C00834A24 /* FacebookCozyEatsApp.swift */,
-				1DE7A58D2AC4955C00834A24 /* ContentView.swift */,
 				1DE7A58F2AC4955E00834A24 /* Assets.xcassets */,
 				1DE7A5912AC4955E00834A24 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				1DE7A5922AC4955E00834A24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DE7A5992AC4956800834A24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DE7A5AA2AC4F50D00834A24 /* FoodDetailView.swift */,
+				1DE7A59A2AC4958F00834A24 /* HomeView.swift */,
+				1DE7A5A82AC4D31200834A24 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DE7A59C2AC49C0B00834A24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DE7A5A42AC4D01C00834A24 /* Profile.swift */,
+				1DE7A5C82AC5296900834A24 /* Food.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DE7A59D2AC49C1200834A24 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DE7A58E2AC4955C00834A24 /* ContentView.swift in Sources */,
 				1DE7A58C2AC4955C00834A24 /* FacebookCozyEatsApp.swift in Sources */,
+				1DE7A5A52AC4D01C00834A24 /* Profile.swift in Sources */,
+				1DE7A5A92AC4D31200834A24 /* LoginView.swift in Sources */,
+				1DE7A59B2AC4958F00834A24 /* HomeView.swift in Sources */,
+				1DE7A5AB2AC4F50D00834A24 /* FoodDetailView.swift in Sources */,
+				1DE7A5C92AC5296900834A24 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +320,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +350,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
